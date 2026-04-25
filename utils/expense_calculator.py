@@ -1,0 +1,44 @@
+class Calculator:
+    @staticmethod
+    def multiply( a, b) -> float:
+        """
+        Multiply two numbers.
+
+        Args:
+        a: The first number.
+        b: The second number.
+
+        Returns:
+            float: The product of the two numbers.
+        """
+        return float(a) * float(b)
+    
+    @staticmethod
+    def calculate_total(*x: float) -> float:
+        """
+        Calculate sum of the given list of numbers
+
+        Args:
+            x[list]: List of floating numbers
+
+        Returns:
+            float: the sum of numbers in the list x
+
+        
+        """
+        return sum(x)
+    
+    @staticmethod
+    def calculate_daily_budget(total: float, days: int) -> float:
+        """
+        Calculate daily budget
+
+        Args:
+            totla (float): Total cost.
+            days (int): Total number of days
+        
+        Returns:
+            float: expense for a single day
+        """
+        return total/ days if days > 0 else 0
+

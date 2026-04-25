@@ -5,4 +5,4 @@ llm:
   
   groq:
     provider: "groq"
-    model_name: "deepseek-r1-destill-llama-70b"
+    model_name: "llama3-8b-8192"
