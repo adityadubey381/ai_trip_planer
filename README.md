@@ -1,3 +1,23 @@
+# AI Trip Planner
+
+A compact travel planning app with a Streamlit frontend and FastAPI backend. Enter a destination and trip length, and it returns a ready-to-use plan with:
+
+- itinerary
+- hotels
+- restaurants
+- activities
+- transport options
+- estimated costs
+- weather and currency details
+
+
+## Config
+
+- config.yaml for model settings
+- .env for API keys
+
+This is a practical travel assistant built to generate useful trip plans quickly.
+
 ## all Command 
   -------------  
 
@@ -21,8 +41,9 @@
 
 ```doskey/history```
 
-# How to run frontend
-```streamlit run streamlit_app.py```
+## Run
 
-# How to run Backend
-```uvicorn main:app --host 0.0.0.0 --port 8000 --reload```
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+streamlit run streamlit_app.py
+```
